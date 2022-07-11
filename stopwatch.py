@@ -68,7 +68,7 @@ root.title("Stopwatch")
 
 # Fixing the window size.
 root.minsize(width=270, height=100)
-label = Tkinter.Label(root, text='Ready!', fg='black', font='Verdana 30 bold')
+label = Tkinter.Label(root, text='Stopwatch', fg='black', font='Verdana 30 bold')
 label.pack()
 f = Tkinter.Frame(root)
 start = Tkinter.Button(f, text='Start', width=6, command=lambda: Start(label))
