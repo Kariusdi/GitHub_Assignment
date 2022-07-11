@@ -1,5 +1,6 @@
 import tkinter as Tkinter
 from datetime import datetime
+import random
 counter = 0
 running = False
 
@@ -61,13 +62,19 @@ def Reset(label):
 	# If reset is pressed while the stopwatch is running. 
 	else:
 		label['text'] = '00:00:00'
-
+  
+def random_theme():
+    colors = ['gray', 'green', 'yellow', 'pink', 'red', 'blue']
+    rand_color = random.choice(colors) 
+    print(rand_color)   
+    return rand_color
 
 root = Tkinter.Tk()
 root.title("Stopwatch")
-
+color = random_theme()
+root.configure(bg=color)
 # Fixing the window size.
-root.minsize(width=250, height=70)
+root.minsize(width=270, height=100)
 label = Tkinter.Label(root, text='Ready!', fg='black', font='Verdana 30 bold')
 label.pack()
 f = Tkinter.Frame(root)
