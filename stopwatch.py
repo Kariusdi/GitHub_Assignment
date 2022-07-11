@@ -64,7 +64,7 @@ def Reset(label):
 		label['text'] = '00:00:00'
   
 def random_theme():
-    colors = ['gray', 'green', 'yellow', 'pink', 'red', 'blue']
+    colors = ['gray', 'green', 'yellow', 'pink', 'red', 'blue', 'brown', 'purple']
     rand_color = random.choice(colors) 
     print(rand_color)   
     return rand_color
